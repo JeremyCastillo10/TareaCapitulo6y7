@@ -1,0 +1,26 @@
+﻿<Window x:Class="Ejercicio_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="396" Width="283">
+    <Grid Margin="-31,-37,-9,14">
+        <TextBlock HorizontalAlignment="Left" Margin="60,85,0,0"  VerticalAlignment="Top" Text="DimensionX:"/>
+        <TextBox x:Name = "txtPosicionx" HorizontalAlignment="Left" Margin="135,84,0,0"  Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Imprimir" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="162,165,0,0" Click="ButtonClick_Imprimir"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="60,122,0,0"  VerticalAlignment="Top" Text="DimensionY:"/>
+        <TextBox x:Name="txtPosiciony" HorizontalAlignment="Left" Margin="135,122,0,0"  Text="" VerticalAlignment="Top" Width="120"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=Resultado}" Margin="45,201,25,-11">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+    </Grid>
+</Window>
